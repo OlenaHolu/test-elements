@@ -14,12 +14,12 @@ export default function Home() {
         <NavBar
           items={[
             { name: "Home", url: "#", icon: HomeIcon },
-            { name: "About", url: "#", icon: InfoIcon },
-            { name: "Projects", url: "#", icon: InfoIcon },
-            { name: "Contacts", url: "#", icon: InfoIcon }
+            { name: "About", url: "/about", icon: InfoIcon },
+            { name: "Projects", url: "/projects", icon: InfoIcon },
+            { name: "Contacts", url: "/contacts", icon: InfoIcon }
           
           ]}
-          className="your-custom-class"
+          className="class"
         />
 
         <Globe></Globe>
