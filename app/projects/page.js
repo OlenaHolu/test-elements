@@ -1,21 +1,20 @@
 'use client'
 
 import { NavBar } from "@/components/ui/tubelight-navbar";
+import { WavyBackground } from "@/components/ui/wavy-background";
 import { HomeIcon, InfoIcon } from "lucide-react";
 
 export default function Projects() {
     return (
         <>
-            <NavBar
-                items={[
-                    { name: "Home", url: "/", icon: HomeIcon },
-                    { name: "About", url: "/about", icon: InfoIcon },
-                    { name: "Projects", url: "/projects", icon: InfoIcon },
-                    { name: "Contacts", url: "/contacts", icon: InfoIcon }
-                ]}
-                className="your-custom-class"
-            />
-            <h1>Projects page</h1>
+            <WavyBackground>
+            <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
+        Project "Diseño de interfaces WEB"
+      </p>
+      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        Leverage the power of canvas to create a beautiful hero section
+      </p>
+            </WavyBackground>
         </>
     );
 
